@@ -1,0 +1,755 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Muli', sans-serif; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+@font-face {
+  font-family: 'bebasneue_bold';
+  src: url("../SCSS/FONT/WOFF/bebasneue_bold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'bebasneue_book';
+  src: url("../SCSS/FONT/WOFF/bebasneue_book.woff") format("woff"); }
+
+@font-face {
+  font-family: 'bebasneue_light';
+  src: url("../SCSS/FONT/WOFF/bebasneue_light.woff") format("woff"); }
+
+@font-face {
+  font-family: 'bebasneue_regular';
+  src: url("../SCSS/FONT/WOFF/bebasneue_regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'bebasneue_thin';
+  src: url("../SCSS/FONT/WOFF/bebasneue_thin.woff") format("woff"); }
+
+.transitions, .container .sectionIntroduction .introNameComponent, .container .sectionIntroduction .availabilityComponent, .container .sectionAboutMe .aboutMe, .container .sectionAboutMe .firstDescription, .container .sectionAboutMe .secondDescription, .container .sectionSkills .introSkillsLeft, .container .sectionSkills .skillsSetOne, .container .sectionSkills .skillsSetTwo, .container .sectionSkills .skillsSetThree, .container .sectionSkills .skillsSetFour, .container .sectionSkills .skillsSetFive, .container .sectionMyApproach .myApproachComponent, .container .sectionMyApproach .downloadCVComponent, .container .sectionProjectDescription .projectsIntoComponent, .container .sectionProjectDescription .projects, .container .sectionProjectDescription .projects .projectWindow, .container .sectionContact .contactComponent, .container .sectionContact .contactDetailsComponent {
+  transition-duration: 1000ms;
+  transition-timing-function: ease;
+  transition-delay: 500ms; }
+
+.container {
+  position: relative;
+  display: block; }
+  .container .sectionIntroduction {
+    position: relative;
+    width: 100vw;
+    height: 100vh; }
+    .container .sectionIntroduction .introNameComponent {
+      display: block;
+      width: 50%;
+      height: 25vh;
+      position: absolute;
+      top: 10vh;
+      left: 25vw; }
+      @media (min-width: 880px) {
+        .container .sectionIntroduction .introNameComponent {
+          display: inline-block;
+          width: 26vw;
+          left: 25vw;
+          top: unset;
+          bottom: 20vh; } }
+      .container .sectionIntroduction .introNameComponent .highlight {
+        color: #E7E7E7; }
+    .container .sectionIntroduction .availabilityComponent {
+      display: block;
+      position: absolute;
+      width: 50%;
+      top: 70vh;
+      height: 25vh;
+      left: 25vw; }
+      @media (min-width: 880px) {
+        .container .sectionIntroduction .availabilityComponent {
+          display: inline-block;
+          width: 20vw;
+          bottom: 15vh;
+          top: unset;
+          left: unset;
+          right: 15vw; } }
+      .container .sectionIntroduction .availabilityComponent .description {
+        margin-top: 3vh; }
+      .container .sectionIntroduction .availabilityComponent p {
+        font-size: 0.8rem; }
+        .container .sectionIntroduction .availabilityComponent p a {
+          color: #0E70F5;
+          text-decoration: none; }
+  .container .parralax1 {
+    background-image: url("../images/wojciech/w2.jpg"); }
+  .container .sectionAboutMe {
+    position: relative;
+    width: 100vw;
+    height: 100vh; }
+    .container .sectionAboutMe .aboutMe {
+      display: block;
+      position: absolute;
+      width: 50vw;
+      height: 25vh;
+      top: 10vh;
+      left: 25vw; }
+      @media (min-width: 880px) {
+        .container .sectionAboutMe .aboutMe {
+          display: inline-block;
+          width: 20vw;
+          bottom: 30vh;
+          top: unset;
+          left: 15vw;
+          right: 15vw; } }
+    .container .sectionAboutMe .firstDescription {
+      display: block;
+      position: absolute;
+      width: 50vw;
+      height: 25vh;
+      top: 40vh;
+      left: 25vw; }
+      @media (min-width: 880px) {
+        .container .sectionAboutMe .firstDescription {
+          display: inline-block;
+          width: 20vw;
+          bottom: 30vh;
+          top: unset;
+          bottom: 30vh;
+          left: 35vw;
+          right: 15vw; } }
+      .container .sectionAboutMe .firstDescription .regularText span {
+        color: #0E70F5; }
+    .container .sectionAboutMe .secondDescription {
+      display: block;
+      position: absolute;
+      width: 50vw;
+      height: 25vh;
+      left: 25vw;
+      top: 60vh; }
+      @media (min-width: 880px) {
+        .container .sectionAboutMe .secondDescription {
+          display: inline-block;
+          width: 20vw;
+          bottom: 30vh;
+          top: unset;
+          bottom: 30vh;
+          left: unset;
+          right: 20vw; } }
+      .container .sectionAboutMe .secondDescription .regularText span {
+        color: #0E70F5; }
+  .container .parralax2 {
+    background-image: url("../images/wojciech/w5.jpg"); }
+  .container .sectionSkills {
+    position: relative;
+    width: 100vw;
+    height: 180vh; }
+    @media (min-width: 880px) {
+      .container .sectionSkills {
+        height: 100vh; } }
+    .container .sectionSkills .introSkillsLeft {
+      display: block;
+      position: absolute;
+      width: 60vw;
+      height: 25vh;
+      left: 25vw; }
+      @media (min-width: 560px) {
+        .container .sectionSkills .introSkillsLeft {
+          left: 30vw; } }
+      @media (min-width: 880px) {
+        .container .sectionSkills .introSkillsLeft {
+          display: inline-block;
+          width: 25vw;
+          top: 15vh;
+          left: 15vw; } }
+    .container .sectionSkills .skillsSetOne {
+      display: inline-block;
+      position: absolute;
+      width: 50vw;
+      height: 25vh;
+      top: 45vh;
+      left: 18vh; }
+      @media (min-width: 560px) {
+        .container .sectionSkills .skillsSetOne {
+          left: 30vw; } }
+      @media (min-width: 880px) {
+        .container .sectionSkills .skillsSetOne {
+          width: 15vw;
+          top: 20vh;
+          left: 40vw; } }
+    .container .sectionSkills .skillsSetTwo {
+      display: inline-block;
+      position: absolute;
+      width: 30vw;
+      height: 25vh;
+      top: 45vh;
+      left: 70vw; }
+      @media (min-width: 560px) {
+        .container .sectionSkills .skillsSetTwo {
+          left: 65vw; } }
+      @media (min-width: 880px) {
+        .container .sectionSkills .skillsSetTwo {
+          top: 20vh;
+          left: 55vw;
+          width: 10vw; } }
+    .container .sectionSkills .skillsSetThree {
+      display: inline-block;
+      position: absolute;
+      width: 30vw;
+      height: 25vh;
+      top: 90vh;
+      left: 18vh; }
+      @media (min-width: 560px) {
+        .container .sectionSkills .skillsSetThree {
+          left: 30vw; } }
+      @media (min-width: 880px) {
+        .container .sectionSkills .skillsSetThree {
+          width: 15vw;
+          height: 25vh;
+          top: 20vh;
+          left: unset;
+          right: 15vw; } }
+    .container .sectionSkills .skillsSetFour {
+      display: inline-block;
+      position: absolute;
+      width: 30vw;
+      height: 25vh;
+      bottom: 10vh;
+      top: 90vh;
+      left: 70vw; }
+      @media (min-width: 560px) {
+        .container .sectionSkills .skillsSetFour {
+          left: 65vw; } }
+      @media (min-width: 880px) {
+        .container .sectionSkills .skillsSetFour {
+          width: 20vw;
+          bottom: 10vh;
+          left: 40vw;
+          top: unset; } }
+    .container .sectionSkills .skillsSetFive {
+      display: inline-block;
+      position: absolute;
+      width: 30vw;
+      height: 25vh;
+      left: 18vh;
+      top: 120vh; }
+      @media (min-width: 560px) {
+        .container .sectionSkills .skillsSetFive {
+          left: 30vw; } }
+      @media (min-width: 880px) {
+        .container .sectionSkills .skillsSetFive {
+          width: 20vw;
+          height: 25vh;
+          bottom: 10vh;
+          left: 55vw;
+          top: unset; } }
+    .container .sectionSkills .skills {
+      margin-top: 1vh;
+      color: #7D7D7D;
+      letter-spacing: 1px;
+      font-family: bebasneue_light;
+      list-style-type: none;
+      position: relative; }
+      .container .sectionSkills .skills svg {
+        position: absolute;
+        left: -30px; }
+      .container .sectionSkills .skills span {
+        font-family: bebasneue_thin; }
+  .container .parralax3 {
+    background-image: url("../images/wojciech/w1.jpg"); }
+  .container .sectionMyApproach {
+    position: relative;
+    width: 100vw;
+    height: 100vh; }
+    .container .sectionMyApproach .myApproachComponent {
+      display: inline-block;
+      position: absolute;
+      width: 50vw;
+      height: 25vh;
+      top: 0vh;
+      left: 25vw; }
+      @media (min-width: 880px) {
+        .container .sectionMyApproach .myApproachComponent {
+          width: 25vw;
+          top: 35vh;
+          left: 15vw; } }
+    .container .sectionMyApproach .downloadCVComponent {
+      display: inline-block;
+      position: absolute;
+      width: 40vw;
+      height: 55vh;
+      top: 40vh;
+      left: 25vw; }
+      @media (min-width: 880px) {
+        .container .sectionMyApproach .downloadCVComponent {
+          bottom: 10vh;
+          left: 75vh;
+          top: unset; } }
+      .container .sectionMyApproach .downloadCVComponent .containerCV {
+        height: 75px;
+        display: flex;
+        width: 100vw;
+        position: relative;
+        align-items: flex-end;
+        margin-top: 10vh; }
+        @media (min-width: 1010px) {
+          .container .sectionMyApproach .downloadCVComponent .containerCV {
+            width: 40vw; } }
+        .container .sectionMyApproach .downloadCVComponent .containerCV svg {
+          position: absolute;
+          left: -15vw;
+          top: -4vh; }
+          @media (min-width: 480px) {
+            .container .sectionMyApproach .downloadCVComponent .containerCV svg {
+              left: -10vw;
+              top: -4vh; } }
+          @media (min-width: 1010px) {
+            .container .sectionMyApproach .downloadCVComponent .containerCV svg {
+              left: -5vw;
+              top: -4vh; } }
+        .container .sectionMyApproach .downloadCVComponent .containerCV .downloadCV {
+          width: 100%;
+          text-decoration: none;
+          color: #0E70F5;
+          font-size: 1.2rem;
+          height: 45px;
+          margin: 0 15px; }
+          @media (min-width: 580px) {
+            .container .sectionMyApproach .downloadCVComponent .containerCV .downloadCV {
+              font-size: 1.5rem; } }
+        .container .sectionMyApproach .downloadCVComponent .containerCV a {
+          position: absolute;
+          top: 5vh;
+          left: 15vw; }
+          @media (min-width: 1010px) {
+            .container .sectionMyApproach .downloadCVComponent .containerCV a {
+              left: 5vw; } }
+          .container .sectionMyApproach .downloadCVComponent .containerCV a span {
+            color: #7D7D7D;
+            font-family: bebasneue_regular;
+            height: 40px;
+            position: absolute;
+            top: 5vh;
+            left: 5vw; }
+            @media (min-width: 580px) {
+              .container .sectionMyApproach .downloadCVComponent .containerCV a span {
+                top: unset;
+                left: unset;
+                margin: 0 15px; } }
+    @media (min-width: 580px) {
+      .container .sectionMyApproach .avatar {
+        position: absolute;
+        top: 5vh;
+        right: 5vw;
+        height: 55vh;
+        width: 40vw;
+        background-image: url("../images/w-niebieskie.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.3; } }
+    @media (min-width: 880px) {
+      .container .sectionMyApproach .avatar {
+        right: 0vw;
+        top: unset;
+        opacity: 0.6;
+        height: 45vh;
+        width: 30vw;
+        bottom: 25vh; } }
+  .container .sectionProjectDescription {
+    position: relative;
+    width: 100vw;
+    height: 450vh; }
+    @media (min-width: 480px) {
+      .container .sectionProjectDescription {
+        height: 440vh; } }
+    @media (min-width: 880px) {
+      .container .sectionProjectDescription {
+        height: 440vh; } }
+    @media (min-width: 1000px) {
+      .container .sectionProjectDescription {
+        height: 240vh; } }
+    .container .sectionProjectDescription .projectsIntoComponent {
+      position: absolute;
+      width: 70vw;
+      height: 25vh;
+      top: 5vh;
+      left: 25vw; }
+      @media (min-width: 880px) {
+        .container .sectionProjectDescription .projectsIntoComponent {
+          width: 50vw;
+          left: 15vw; } }
+      .container .sectionProjectDescription .projectsIntoComponent .regularText span {
+        color: #E7E7E7;
+        font-size: 1rem; }
+    .container .sectionProjectDescription .projects {
+      position: relative;
+      top: 40vh;
+      width: 85vw;
+      height: 400vh;
+      display: flex;
+      float: right;
+      align-items: flex-start;
+      flex-direction: column; }
+      @media (min-width: 480px) {
+        .container .sectionProjectDescription .projects {
+          width: 87vw;
+          justify-content: space-around; } }
+      @media (min-width: 1000px) {
+        .container .sectionProjectDescription .projects {
+          height: 200vh;
+          display: flex;
+          width: 98vw;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          align-items: flex-start; } }
+      .container .sectionProjectDescription .projects .projectWindow {
+        width: 80vw;
+        height: 35vh;
+        margin: 10vh 0;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat; }
+        @media (min-width: 480px) {
+          .container .sectionProjectDescription .projects .projectWindow {
+            width: 70vw;
+            height: 45vh; } }
+        @media (min-width: 1000px) {
+          .container .sectionProjectDescription .projects .projectWindow {
+            width: 40vw; } }
+        .container .sectionProjectDescription .projects .projectWindow:nth-child(1n) {
+          margin-left: 8vw; }
+        .container .sectionProjectDescription .projects .projectWindow .contentContainer {
+          position: relative;
+          height: 100%;
+          width: 100%;
+          overflow: hidden; }
+          .container .sectionProjectDescription .projects .projectWindow .contentContainer .cover {
+            height: 110%;
+            width: 110%;
+            position: absolute;
+            top: -1vh;
+            left: -1vw; }
+          .container .sectionProjectDescription .projects .projectWindow .contentContainer h1 {
+            position: absolute;
+            left: 5%;
+            top: 5%;
+            font-size: 2.3rem;
+            font-weight: 900;
+            font-family: 'Muli';
+            letter-spacing: 1px;
+            color: #E7E7E7; }
+            @media (min-width: 480px) {
+              .container .sectionProjectDescription .projects .projectWindow .contentContainer h1 {
+                font-size: 3rem; } }
+            .container .sectionProjectDescription .projects .projectWindow .contentContainer h1:nth-child(6n) {
+              font-size: 2rem; }
+          .container .sectionProjectDescription .projects .projectWindow .contentContainer h2 {
+            display: none; }
+            @media (min-width: 480px) {
+              .container .sectionProjectDescription .projects .projectWindow .contentContainer h2 {
+                display: block;
+                position: absolute;
+                left: 5%;
+                top: 25%;
+                font-size: 1.1rem;
+                margin: 2vh 0;
+                font-family: bebasneue_regular;
+                letter-spacing: 1px;
+                color: #E7E7E7; } }
+          .container .sectionProjectDescription .projects .projectWindow .contentContainer .live {
+            width: 30%;
+            height: 20%;
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer; }
+            .container .sectionProjectDescription .projects .projectWindow .contentContainer .live:hover {
+              border-bottom: 3px solid #E7E7E7; }
+            .container .sectionProjectDescription .projects .projectWindow .contentContainer .live a {
+              font-size: 1.5rem;
+              text-decoration: none;
+              font-weight: 900;
+              font-family: 'Muli';
+              letter-spacing: 1px;
+              color: #E7E7E7; }
+              @media (min-width: 480px) {
+                .container .sectionProjectDescription .projects .projectWindow .contentContainer .live a {
+                  font-size: 2rem; } }
+          .container .sectionProjectDescription .projects .projectWindow .contentContainer .github {
+            width: 30%;
+            height: 20%;
+            position: absolute;
+            bottom: 10%;
+            right: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer; }
+            .container .sectionProjectDescription .projects .projectWindow .contentContainer .github:hover {
+              border-bottom: 3px solid #E7E7E7; }
+            .container .sectionProjectDescription .projects .projectWindow .contentContainer .github a {
+              text-decoration: none;
+              font-size: 1.5rem;
+              font-weight: 900;
+              font-family: 'Muli';
+              letter-spacing: 1px;
+              color: #E7E7E7; }
+              @media (min-width: 480px) {
+                .container .sectionProjectDescription .projects .projectWindow .contentContainer .github a {
+                  font-size: 2rem; } }
+      .container .sectionProjectDescription .projects .p1 {
+        background-image: url("../images/PROJEKTY/P1.jpg");
+        background-size: cover;
+        background-position: center; }
+      .container .sectionProjectDescription .projects .p2 {
+        background-image: url("../images/PROJEKTY/P2.jpg"); }
+      .container .sectionProjectDescription .projects .p3 {
+        background-image: url("../images/PROJEKTY/P3.jpg");
+        background-size: cover;
+        background-position: center; }
+      .container .sectionProjectDescription .projects .p4 {
+        background-image: url("../images/PROJEKTY/SVG1.jpg");
+        background-size: cover;
+        background-position: center; }
+      .container .sectionProjectDescription .projects .p5 {
+        background-image: url("../images/PROJEKTY/SVG2.jpg");
+        background-size: cover;
+        background-position: center; }
+      .container .sectionProjectDescription .projects .p6 {
+        background-color: black;
+        background-image: url("../images/PROJEKTY/React.jpg");
+        background-size: contain; }
+        .container .sectionProjectDescription .projects .p6 h1 {
+          font-size: 1rem; }
+  .container .sectionContact {
+    position: relative;
+    width: 100vw;
+    height: 100vh; }
+    .container .sectionContact .contactComponent {
+      display: inline-block;
+      position: absolute;
+      width: 50vw;
+      height: 25vh;
+      top: 10vh;
+      left: 25vw; }
+      @media (min-width: 880px) {
+        .container .sectionContact .contactComponent {
+          width: 26vw;
+          top: unset;
+          bottom: 35vh;
+          left: 15vw; } }
+      .container .sectionContact .contactComponent .checked {
+        width: 4rem; }
+      .container .sectionContact .contactComponent .bolded {
+        color: #E7E7E7;
+        font-size: 1.2rem; }
+    .container .sectionContact .contactDetailsComponent {
+      display: inline-block;
+      position: absolute;
+      width: 50vw;
+      height: 25vh;
+      bottom: 25vh;
+      left: 35vw; }
+      @media (min-width: 880px) {
+        .container .sectionContact .contactDetailsComponent {
+          width: 20vw;
+          bottom: 25vh;
+          left: 55vw; } }
+      .container .sectionContact .contactDetailsComponent .checked {
+        width: 2rem; }
+      .container .sectionContact .contactDetailsComponent .title {
+        font-size: 2rem; }
+      .container .sectionContact .contactDetailsComponent li {
+        list-style-type: none;
+        position: relative;
+        color: #F31265;
+        margin-top: 2vh;
+        line-height: 17px; }
+        .container .sectionContact .contactDetailsComponent li:nth-child(2n) {
+          line-height: 22px; }
+        .container .sectionContact .contactDetailsComponent li svg {
+          position: absolute;
+          left: -30px;
+          fill: #F31265; }
+          .container .sectionContact .contactDetailsComponent li svg line {
+            stroke: #F31265; }
+
+.opacity {
+  opacity: 0.8;
+  background: #3E3E3E;
+  animation-duration: 2000ms;
+  animation-delay: 400ms;
+  transition-timing-function: ease-in-out; }
+
+.hidden {
+  visibility: hidden; }
+
+@keyframes grain {
+  0% {
+    transform: translate(-10%, 10%); }
+  10% {
+    transform: translate(-25%); }
+  20% {
+    transform: translate(-30%, 10%); }
+  30% {
+    transform: translate(-30%, 30%); }
+  50% {
+    transform: translate(-15%, 10%); }
+  60% {
+    transform: translate(-20%, 20%); }
+  70% {
+    transform: translate(-5%, 20%); }
+  80% {
+    transform: translate(-25%, 5%); }
+  90% {
+    transform: translate(-30%, 25%); }
+  100% {
+    transform: translate(-10%, 10%); } }
+
+.column {
+  height: 100vh;
+  width: 5vw;
+  min-width: 62px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+  .column #logo {
+    width: 80px;
+    height: 80px;
+    cursor: none; }
+  .column .columnUpper {
+    display: block;
+    content: '';
+    clear: both;
+    height: 10vh;
+    border-right: 1px solid #7D7D7D; }
+  .column .columnLogo {
+    display: inline-block;
+    margin: 2vh 1vw;
+    display: block;
+    content: '';
+    clear: both; }
+  .column .columnSocialIcons {
+    height: 78vh;
+    border-right: 1px solid #7D7D7D;
+    position: relative;
+    bottom: 0; }
+    .column .columnSocialIcons svg {
+      width: 40px;
+      height: 40px; }
+      .column .columnSocialIcons svg:active {
+        height: 60px;
+        width: 60px;
+        margin: 0 0 -10px -10px; }
+    .column .columnSocialIcons #svgmail {
+      position: fixed;
+      bottom: 5vh;
+      left: 12px; }
+    .column .columnSocialIcons #svgLinkedIn {
+      position: fixed;
+      bottom: 15vh;
+      left: 12px; }
+    .column .columnSocialIcons #svgTwitter {
+      position: fixed;
+      bottom: 25vh;
+      left: 12px; }
+    .column .columnSocialIcons #svgfb {
+      position: fixed;
+      bottom: 35vh;
+      left: 12px; }
+
+@media (max-width: 880px) {
+  body {
+    background: #333333;
+    transition-duration: 1000ms;
+    transition-timing-function: ease;
+    transition-delay: 500ms;
+    background-image: unset; } }
+
+@media (min-width: 880px) {
+  body {
+    background: #333333;
+    transition-duration: 1000ms;
+    transition-timing-function: ease;
+    transition-delay: 500ms;
+    background-image: url("../images/wojciech/w4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: bottom;
+    background-size: cover; } }
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px; } }
+
+.windowGrain {
+  height: 100vh;
+  width: 100vw;
+  display: inline-block;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden; }
+  .windowGrain .backgroundGrain {
+    height: 250vh;
+    width: 250vw;
+    position: inherit;
+    top: -80vh;
+    left: 0;
+    background-image: url("../images/grain.png");
+    background-repeat: repeat;
+    background-origin: content-box;
+    animation-name: grain;
+    animation-iteration-count: infinite;
+    animation-duration: 500ms; }
+
+.checked {
+  width: 2rem;
+  height: 1rem;
+  border-bottom: 2px solid #7D7D7D;
+  display: inline-block; }
+
+.counter {
+  font-size: 0.8rem;
+  margin-left: 5px;
+  color: #7D7D7D;
+  display: inline-block;
+  font-family: bebasneue_thin;
+  font-weight: 900;
+  letter-spacing: 2px; }
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: 'Muli';
+  letter-spacing: 1px;
+  color: #E7E7E7; }
+
+.description {
+  font-size: 1.1rem;
+  font-family: bebasneue_regular;
+  letter-spacing: 1px;
+  color: #7D7D7D; }
+
+p {
+  margin-top: 1vh;
+  color: #7D7D7D;
+  font-size: 0.8rem;
+  letter-spacing: 1px; }
+
+.titleTechnologies {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #E7E7E7; }
+
+.parralaxGeneral {
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: block;
+  z-index: -100; }

@@ -1,0 +1,126 @@
+// variables section
+$main_background: #324695;
+$second_colour: #BBB33E;
+$main_color: #0E70F5;
+$second_color: #E7E7E7;
+$background_color: #7D7D7D;
+$Contact_color: #F31265;
+$main_grey: #3E3E3E;
+
+//import section
+@import '../SCSS/STYLES/_reset.scss';
+@import '../SCSS/STYLES/_fonts.scss';
+@import '../SCSS/STYLES/_LandingPage.scss';
+@import '../SCSS/STYLES/_Animations.scss';
+@import '../SCSS/STYLES/_LeftColumn.scss';
+
+// general body section
+
+@media (max-width:880px){
+  body {
+    background: #333333;
+    transition-duration: 1000ms;
+    transition-timing-function: ease;
+    transition-delay: 500ms;
+    background-image: unset;
+  }
+}
+@media (min-width:880px){
+  body {
+    background: #333333;
+    transition-duration: 1000ms;
+    transition-timing-function: ease;
+    transition-delay: 500ms;
+    background-image: url("../images/wojciech/w4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: bottom;
+    background-size: cover;
+  }
+}
+
+html {
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+
+.windowGrain {
+  height: 100vh;
+  width: 100vw;
+  display: inline-block;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  .backgroundGrain {
+    height: 250vh;
+    width: 250vw;
+    position: inherit;
+    top: -80vh;
+    left: 0;
+    background-image: url("../images/grain.png");
+    background-repeat: repeat;
+    background-origin: content-box;
+    animation-name: grain;
+    animation-iteration-count: infinite;
+    animation-duration: 500ms;
+  }
+}
+
+//common class styles
+.checked {
+  width: 2rem;
+  height: 1rem;
+  border-bottom: 2px solid $background_color;
+  display: inline-block;
+}
+
+.counter {
+  font-size: 0.8rem;
+  margin-left: 5px;
+  color: $background_color;
+  display: inline-block;
+  font-family: bebasneue_thin;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: 'Muli';
+  letter-spacing: 1px;
+  color: $second_color;
+}
+
+.description {
+  font-size: 1.1rem;
+  font-family: bebasneue_regular;
+  letter-spacing: 1px;
+  color: $background_color;
+}
+
+p {
+  margin-top: 1vh;
+  color: $background_color;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.titleTechnologies {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: $second_color;
+}
+
+.parralaxGeneral {
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: block;
+  z-index: -100;
+}

@@ -1,0 +1,686 @@
+.transitions {
+  transition-duration: 1000ms;
+  transition-timing-function: ease;
+  transition-delay: 500ms;
+}
+
+//Main components
+.container {
+  position: relative;
+  display: block;
+
+  // first component with introduction
+  .sectionIntroduction {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    .introNameComponent {
+      display: block;
+      width: 50%;
+      height: 25vh;
+      position: absolute;
+      top: 10vh;
+      left: 25vw;
+      @extend .transitions;
+      @media (min-width: 880px) {
+        display: inline-block;
+        width: 26vw;
+        left: 25vw;
+        top: unset;
+        bottom: 20vh;
+      }
+
+      .highlight {
+        color: $second_color;
+      }
+
+    }
+
+    //second component with call to action => contact me
+    .availabilityComponent {
+      display: block;
+      position: absolute;
+      width: 50%;
+      top: 70vh;
+      height: 25vh;
+      left: 25vw;
+      @extend .transitions;
+      @media (min-width: 880px) {
+        display: inline-block;
+        width: 20vw;
+        bottom: 15vh;
+        top: unset;
+        left: unset;
+        right: 15vw;
+      }
+      .description {
+        margin-top: 3vh;
+      }
+      p {
+        font-size: 0.8rem;
+        a {
+          color: $main_color;
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
+
+  .parralax1 {
+    background-image: url("../images/wojciech/w2.jpg");
+  }
+  // third component with few words about me
+  .sectionAboutMe {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    .aboutMe {
+      display: block;
+      position: absolute;
+      width: 50vw;
+      height: 25vh;
+      top: 10vh;
+      left: 25vw;
+      @extend .transitions;
+      @media (min-width: 880px) {
+        display: inline-block;
+        width: 20vw;
+        bottom: 30vh;
+        top: unset;
+        left: 15vw;
+        right: 15vw;
+      }
+    }
+
+    .firstDescription {
+      display: block;
+      position: absolute;
+      width: 50vw;
+      height: 25vh;
+      top: 40vh;
+      left: 25vw;
+      @extend .transitions;
+      @media (min-width: 880px) {
+        display: inline-block;
+        width: 20vw;
+        bottom: 30vh;
+        top: unset;
+        bottom: 30vh;
+        left: 35vw;
+        right: 15vw;
+      }
+      .regularText {
+        span {
+          color: $main_color;
+        }
+      }
+    }
+
+    .secondDescription {
+      display: block;
+      position: absolute;
+      width: 50vw;
+      height: 25vh;
+      left: 25vw;
+      top: 60vh;
+      @extend .transitions;
+      @media (min-width: 880px) {
+        display: inline-block;
+        width: 20vw;
+        bottom: 30vh;
+        top: unset;
+        bottom: 30vh;
+        left: unset;
+        right: 20vw;
+      }
+      .regularText {
+        span {
+          color: $main_color;
+        }
+      }
+
+    }
+  }
+
+  .parralax2 {
+    background-image: url("../images/wojciech/w5.jpg");
+  }
+
+  //forth component with list of technologies managed
+  .sectionSkills {
+    position: relative;
+    width: 100vw;
+    height: 180vh;
+    @media (min-width: 880px) {
+      height: 100vh;
+    }
+    .introSkillsLeft {
+      display: block;
+      position: absolute;
+      width: 60vw;
+      height: 25vh;
+      left: 25vw;
+      @extend .transitions;
+      @media (min-width: 560px) {
+        left: 30vw;
+      }
+      @media (min-width: 880px) {
+        display: inline-block;
+        width: 25vw;
+        top: 15vh;
+        left: 15vw;
+      }
+    }
+
+    .skillsSetOne {
+      display: inline-block;
+      position: absolute;
+      width: 50vw;
+      height: 25vh;
+      top: 45vh;
+      left: 18vh;
+      @extend .transitions;
+      @media (min-width: 560px) {
+        left: 30vw;
+      }
+      @media (min-width: 880px) {
+        width: 15vw;
+        top: 20vh;
+        left: 40vw;
+      }
+    }
+
+    .skillsSetTwo {
+      display: inline-block;
+      position: absolute;
+      width: 30vw;
+      height: 25vh;
+      top: 45vh;
+      left: 70vw;
+      @extend .transitions;
+      @media (min-width: 560px) {
+        left: 65vw;
+      }
+      @media (min-width: 880px) {
+        top: 20vh;
+        left: 55vw;
+        width: 10vw;
+      }
+    }
+
+    .skillsSetThree {
+      display: inline-block;
+      position: absolute;
+      width: 30vw;
+      height: 25vh;
+      top: 90vh;
+      left: 18vh;
+      @extend .transitions;
+      @media (min-width: 560px) {
+        left: 30vw;
+      }
+      @media (min-width: 880px) {
+        width: 15vw;
+        height: 25vh;
+        top: 20vh;
+        left: unset;
+        right: 15vw;
+      }
+    }
+
+    .skillsSetFour {
+      display: inline-block;
+      position: absolute;
+      width: 30vw;
+      height: 25vh;
+      bottom: 10vh;
+      top: 90vh;
+      left: 70vw;
+      @extend .transitions;
+      @media (min-width: 560px) {
+        left: 65vw;
+      }
+      @media (min-width: 880px) {
+        width: 20vw;
+        bottom: 10vh;
+        left: 40vw;
+        top: unset;
+      }
+    }
+
+    .skillsSetFive {
+      display: inline-block;
+      position: absolute;
+      width: 30vw;
+      height: 25vh;
+      left: 18vh;
+      top: 120vh;
+      @extend .transitions;
+      @media (min-width: 560px) {
+        left: 30vw;
+      }
+      @media (min-width: 880px) {
+        width: 20vw;
+        height: 25vh;
+        bottom: 10vh;
+        left: 55vw;
+        top: unset;
+      }
+    }
+
+    .skills {
+      margin-top: 1vh;
+      color: $background_color;
+      letter-spacing: 1px;
+      font-family: bebasneue_light;
+      list-style-type: none;
+      position: relative;
+      svg {
+        position: absolute;
+        left: -30px;
+      }
+      span {
+        font-family: bebasneue_thin;
+      }
+    }
+
+  }
+
+  .parralax3 {
+    background-image: url("../images/wojciech/w1.jpg");
+  }
+  //fifth component with CV file to download & my approach
+  .sectionMyApproach {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    .myApproachComponent {
+      display: inline-block;
+      position: absolute;
+      width: 50vw;
+      height: 25vh;
+      top: 0vh;
+      left: 25vw;
+      @extend .transitions;
+      @media (min-width: 880px) {
+        width: 25vw;
+        top: 35vh;
+        left: 15vw;
+      }
+    }
+
+    .downloadCVComponent {
+      display: inline-block;
+      position: absolute;
+      width: 40vw;
+      height: 55vh;
+      top: 40vh;
+      left: 25vw;
+      @extend .transitions;
+      @media (min-width: 880px) {
+        bottom: 10vh;
+        left: 75vh;
+        top: unset;
+      }
+      .containerCV {
+        height: 75px;
+        display: flex;
+        width: 100vw;
+        position: relative;
+        align-items: flex-end;
+        margin-top: 10vh;
+        @media (min-width: 1010px) {
+          width: 40vw;
+        }
+        svg {
+          position: absolute;
+          left: -15vw;
+          top: -4vh;
+          @media (min-width: 480px) {
+            left: -10vw;
+            top: -4vh;
+          }
+          @media (min-width: 1010px) {
+            left: -5vw;
+            top: -4vh;
+          }
+        }
+        .downloadCV {
+          width: 100%;
+          text-decoration: none;
+          color: $main_color;
+          font-size: 1.2rem;
+          height: 45px;
+          margin: 0 15px;
+          @media (min-width: 580px) {
+            font-size: 1.5rem;
+          }
+        }
+        a {
+          position: absolute;
+          top: 5vh;
+          left: 15vw;
+          @media (min-width: 1010px) {
+            left: 5vw;
+          }
+          span {
+            color: $background_color;
+            font-family: bebasneue_regular;
+            height: 40px;
+            position: absolute;
+            top: 5vh;
+            left: 5vw;
+            @media (min-width: 580px) {
+              top: unset;
+              left: unset;
+              margin: 0 15px;
+            }
+
+          }
+        }
+
+      }
+    }
+    .avatar {
+      @media (min-width: 580px) {
+        position: absolute;
+        top: 5vh;
+        right: 5vw;
+        height: 55vh;
+        width: 40vw;
+        background-image: url("../images/w-niebieskie.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.3;
+      }
+      @media (min-width: 880px) {
+        right: 0vw;
+        top: unset;
+        opacity: 0.6;
+        height: 45vh;
+        width: 30vw;
+        bottom: 25vh;
+      }
+    }
+
+  }
+
+  .sectionProjectDescription {
+    position: relative;
+    width: 100vw;
+    height: 450vh;
+    @media (min-width: 480px) {
+      height: 440vh;
+    }
+    @media (min-width: 880px) {
+      height: 440vh;
+    }
+    @media (min-width: 1000px) {
+      height: 240vh;
+    }
+    .projectsIntoComponent {
+      position: absolute;
+      width: 70vw;
+      height: 25vh;
+      top: 5vh;
+      left: 25vw;
+      @extend .transitions;
+      @media (min-width: 880px) {
+        width: 50vw;
+        left: 15vw;
+      }
+      .regularText {
+        span {
+          color: $second_color;
+          font-size: 1rem;
+        }
+      }
+
+    }
+    .projects {
+      position: relative;
+      top: 40vh;
+      width: 85vw;
+      height: 400vh;
+      display: flex;
+      float: right;
+      align-items: flex-start;
+      flex-direction: column;
+      @extend .transitions;
+      @media (min-width: 480px) {
+        width: 87vw;
+        justify-content: space-around;
+      }
+      @media (min-width: 1000px) {
+        height: 200vh;
+        display: flex;
+        width: 98vw;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+      .projectWindow {
+        width: 80vw;
+        height: 35vh;
+        margin: 10vh 0;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @extend .transitions;
+        @media (min-width: 480px) {
+          width: 70vw;
+          height: 45vh;
+        }
+        @media (min-width: 1000px) {
+          width:40vw;
+        }
+        &:nth-child(1n) {
+          margin-left: 8vw;
+        }
+
+        .contentContainer {
+          position: relative;
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+          .cover {
+            height: 110%;
+            width: 110%;
+            position: absolute;
+            top: -1vh;
+            left: -1vw;
+          }
+          h1 {
+            position: absolute;
+            left: 5%;
+            top: 5%;
+            font-size: 2.3rem;
+            font-weight: 900;
+            font-family: 'Muli';
+            letter-spacing: 1px;
+            color: $second_color;
+            @media (min-width: 480px) {
+              font-size: 3rem;
+            }
+            &:nth-child(6n){
+              font-size: 2rem;
+            }
+          }
+          h2 {
+            display: none;
+            @media (min-width: 480px) {
+              display: block;
+              position: absolute;
+              left: 5%;
+              top: 25%;
+              font-size: 1.1rem;
+              margin:2vh 0;
+              font-family: bebasneue_regular;
+              letter-spacing: 1px;
+              color: $second_color;
+            }
+          }
+          .live {
+            width: 30%;
+            height: 20%;
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+              border-bottom: 3px solid $second_color;
+            }
+            a {
+              font-size: 1.5rem;
+              text-decoration: none;
+              font-weight: 900;
+              font-family: 'Muli';
+              letter-spacing: 1px;
+              color: $second_color;
+              @media (min-width: 480px) {
+                font-size: 2rem;
+              }
+            }
+          }
+          .github {
+            width: 30%;
+            height: 20%;
+            position: absolute;
+            bottom: 10%;
+            right: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &:hover {
+              border-bottom: 3px solid $second_color;
+            }
+
+            a {
+              text-decoration: none;
+              font-size: 1.5rem;
+              font-weight: 900;
+              font-family: 'Muli';
+              letter-spacing: 1px;
+              color: $second_color;
+              @media (min-width: 480px) {
+                font-size: 2rem;
+              }
+            }
+          }
+
+        }
+
+      }
+
+      .p1 {
+        background-image: url("../images/PROJEKTY/P1.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .p2 {
+        background-image: url("../images/PROJEKTY/P2.jpg");
+      }
+      .p3 {
+        background-image: url("../images/PROJEKTY/P3.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .p4 {
+        background-image: url("../images/PROJEKTY/SVG1.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .p5 {
+        background-image: url("../images/PROJEKTY/SVG2.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .p6 {
+        background-color:black;
+        background-image: url("../images/PROJEKTY/React.jpg");
+        background-size: contain;
+        h1{
+          font-size: 1rem;
+        }
+      }
+    }
+
+  }
+
+  .sectionContact {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    .contactComponent {
+      display: inline-block;
+      position: absolute;
+      width: 50vw;
+      height: 25vh;
+      top: 10vh;
+      left: 25vw;
+      @extend .transitions;
+      @media (min-width: 880px) {
+        width: 26vw;
+        top: unset;
+        bottom: 35vh;
+        left: 15vw;
+      }
+      .checked {
+        width: 4rem;
+      }
+      .bolded {
+        color: $second_color;
+        font-size: 1.2rem;
+      }
+    }
+
+    .contactDetailsComponent {
+      display: inline-block;
+      position: absolute;
+      width: 50vw;
+      height: 25vh;
+      bottom: 25vh;
+      left: 35vw;
+      @extend .transitions;
+      @media (min-width: 880px) {
+        width: 20vw;
+        bottom: 25vh;
+        left: 55vw;
+      }
+      .checked {
+        width: 2rem;
+      }
+      .title {
+        font-size: 2rem;
+      }
+      li {
+        list-style-type: none;
+        position: relative;
+        color: $Contact_color;
+        margin-top: 2vh;
+        line-height: 17px;
+        &:nth-child(2n) {
+          line-height: 22px;
+        }
+        svg {
+          position: absolute;
+          left: -30px;
+          fill: $Contact_color;
+          line {
+            stroke: $Contact_color;
+          }
+        }
+      }
+    }
+  }
+
+}
+
